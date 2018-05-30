@@ -44,8 +44,8 @@
         <div class="cart">
           <div class="row">
             <div class="col-12 col-md-6">
-              <div class="cart__goods">
-                <div class="cart__subtitle">BMW 2-series 2015 128i хэтчбек</div>
+              <div class="cart-goods">
+                <div class="cart-goods__subtitle">BMW 2-series 2015 128i хэтчбек</div>
                 <ul class="goods">
                   <li>
                     <div class="row align-items-center goods__main">
@@ -258,24 +258,217 @@
                   </div>
                 </div>
               </div>
+              <div class="cart-detail">
+                <div class="cart-detail__title collapsed" data-toggle="collapse" data-target="#scroll-down1" aria-expanded="false" aria-controls="scroll-down1">
+                  Детализация заказа: <b>Ваш заказ будет отправлен двумя посылками</b>
+                  <p>
+                    <span>Развернуть</span>
+                    <span>Скрыть</span>
+                  </p>
+                </div>
+                <div class="cart-detail__content collapse" id="scroll-down1">
+                  <ul class="cart-detail__package">
+                    <li>
+                      <div class="cart-detail__subtitle">Посылка 1:</div>
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="cart-detail__name cart-detail__name_main">NOKIAN HAKKAPELIITTA 9 SUV 295/40R21 111T XL ШИП</div>
+                        </div>
+                        <div class="col-2">
+                          <div class="cart-detail__quantity">10 шт</div>
+                        </div>
+                        <div class="col-2">
+                          <div class="cart-detail__price cart-detail__price_ex">80 800 <i class="rub">й</i></div>
+                        </div>
+                        <div class="col-2">
+                          <div class="cart-detail__price cart-detail__price_promo">72 400 <i class="rub">й</i></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="cart-detail__name">Вентиль TR-414C хромированный</div>
+                        </div>
+                        <div class="col-2">
+                          <div class="cart-detail__quantity">4 шт</div>
+                        </div>
+                        <div class="col-2">
+                          <div class="cart-detail__price">1 600 <i class="rub">й</i></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="cart-detail__name">Пакет для шин и колес</div>
+                        </div>
+                        <div class="col-2">
+                          <div class="cart-detail__price">4 шт</div>
+                        </div>
+                        <div class="col-2">
+                          <div class="cart-detail__price">80 <i class="rub">й</i></div>
+                        </div>
+                      </div>
+                      <div class="cart-detail__shiping">Доставка не выбрана</div>
+                      <div class="cart-detail__total">Итогого сумма посылки: 74 080 <i class="rub">й</i></div>
+                    </li>
+                    <li>
+                      <div class="cart-detail__subtitle">Посылка 2:</div>
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="cart-detail__name cart-detail__name_main">REPLICA OPL11 7x17/5x115 ET45 D70.3 W</div>
+                        </div>
+                        <div class="col-2">
+                          <div class="cart-detail__price">1 шт</div>
+                        </div>
+                        <div class="col-2">
+                          <div class="cart-detail__price">6 320 <i class="rub">й</i></div>
+                        </div>
+                      </div>
+                      <div class="cart-detail__shiping">Доставка не выбрана</div>
+                      <div class="cart-detail__total">Итогого сумма посылки: 6 320 <i class="rub">й</i></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-6">
-
+              <div class="cart-ordering">
+                <div class="row align-items-center cart-ordering__head">
+                  <div class="col">
+                    <div class="cart-ordering__title">Оформление заказа</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="cart-ordering__legal">
+                      <div class="row no-gutters">
+                        <div class="col-auto">
+                          <i class="icon-legal"></i>
+                        </div>
+                        <div class="col">
+                          <span>Оформить заказ <br>как юридическое лицо</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-ordering-recipient">
+                  <div class="cart-ordering__subtitle">ПОЛУЧАТЕЛЬ</div>
+                  <div class="cart-ordering-recipient__inputs">
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="input-holder">
+                          <label>Номер телефона<span>*</span></label>
+                          <div class="phone"><input type="tel" required class="input" placeholder="(___) ___-__-__"></div>
+                          <p>Укажите номер телефона</p>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="input-holder error">
+                          <label>ФИО<span>*</span></label>
+                          <input type="text" class="input">
+                          <p>Укажите имя получателя</p>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="input-holder">
+                          <label>Электронная почта<span>*</span></label>
+                          <input type="text" class="input">
+                          <p>Укажите электронную почту</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script>
+                    $('.phone input').mask('(999) 999-99-99');
+                  </script>
+                  <div class="cart-ordering-recipient__add-phone" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<p>Важно указать запасной номер телефона.</p>Если курьер не дозвониться до вас, то заказ будет отменен.">
+                    <span>Добавить запасной</span>
+                    <i class="icon-question"></i>
+                  </div>
+                  <div class="cart-ordering-recipient__offers">
+                    <input type="checkbox" class="checkbox" id="offers">
+                    <label for="offers">Хочу получать персональные предложения и скидки по эл. почте</label>
+                  </div>
+                </div>
+                <div class="cart-ordering-delivery">
+                  <div class="cart-ordering-delivery__city">
+                    <span class="cart-ordering__subtitle">ДОСТАВКА В</span>
+                    <div class="city-picker picker">
+                      <select class="selectpicker" title="Ярославль">
+                        <option>Ярославль</option>
+                        <option>Москва</option>
+                        <option>Владимир</option>
+                        <option>Тутаев</option>
+                        <option>Санкт-Петербург</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="delivery">
+                    <ul class="delivery__tabs nav nav-tabs row no-gutters">
+                      <li class="col-6">
+                        <a data-toggle="tab" href="#panel1" class="active">
+                          <div class="row no-gutters">
+                            <div class="col-auto">
+                              <div class="delivery__tabs-ico">
+                                <i class="icon-courier"></i>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="delivery__tabs-type">
+                                <b>Курьером</b>
+                                до подъезда
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="delivery__tabs-price">
+                                <b>500 <i class="rub">й</i></b>
+                                завтра
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="col-6">
+                        <a data-toggle="tab" href="#panel2">
+                          <div class="row no-gutters">
+                            <div class="col-auto">
+                              <div class="delivery__tabs-ico">
+                                <i class="icon-car"></i>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="delivery__tabs-type">
+                                <b>Самовывоз</b>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="delivery__tabs-price">
+                                <b>99 <i class="rub">й</i></b>
+                                28.03.2018
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="delivery__content tab-content">
+                      <div id="panel1" class="tab-pane fade">
+1
+                      </div>
+                      <div id="panel2" class="tab-pane fade">
+2
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
     <footer class="footer">
-    
+      <div class="container">
+        © 2009 - 2017, шины и диски интернет‒магазин «kolesatyt.ru». <a href="#">Договор оферты</a>
+      </div>
     </footer>
   </div>
-  <script>
-    (function() {
-      $(window).load(function() {
-    
-      });
-    }());
-  </script>
 </body>
 </html>
