@@ -53,12 +53,12 @@ a:hover .icon-caps {
 .icon-courier {
   width: 42px;
   height: 34px;
-  background-position: 0 -92px; }
+  background-position: -44px -46px; }
 
 .icon-car {
   width: 44px;
   height: 34px;
-  background-position: -42px -92px; }
+  background-position: 0 -46px; }
 
 @font-face {
   font-family: 'Rub';
