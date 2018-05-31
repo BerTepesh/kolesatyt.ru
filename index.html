@@ -58,7 +58,7 @@
                         <div class="goods__quantity">
                           <div class="spinner">
                             <button type="button"><i class="minus"></i>
-                            </button><input type="number" class="input" value="1"><button type="button"><i class="plus"></i></button>
+                            </button><input type="number" class="form-control" value="1"><button type="button"><i class="plus"></i></button>
                           </div>
                           <div class="goods__quantity-price"><b>8 800 <i class="rub">&#8381;</i></b> шт</div>
                         </div>
@@ -72,7 +72,11 @@
                         </div>
                       </div>
                       <div class="col-auto">
-                        <div class="goods__delete"></div>
+                        <div class="goods__delete">
+                          <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
                       </div>
                     </div>
                     <div class="row align-items-center">
@@ -99,7 +103,7 @@
                         <div class="goods__quantity">
                           <div class="spinner">
                             <button type="button"><i class="minus"></i>
-                            </button><input type="number" class="input" value="1"><button type="button"><i class="plus"></i></button>
+                            </button><input type="number" class="form-control" value="1"><button type="button"><i class="plus"></i></button>
                           </div>
                         </div>
                       </div>
@@ -109,7 +113,11 @@
                         </div>
                       </div>
                       <div class="col-auto">
-                        <div class="goods__delete"></div>
+                        <div class="goods__delete">
+                          <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
                       </div>
                     </div>
                     <div class="row align-items-center">
@@ -120,7 +128,7 @@
                         </div>
                       </div>
                       <div class="col-auto">
-                        <a href="#" class="goods__caps btn btn-bordered">
+                        <a href="#" class="goods__caps btn btn-bordered btn-sm">
                           <span class="icon-caps mr-2"></span>
                           Подобрать колпаки
                         </a>
@@ -143,7 +151,7 @@
                         <div class="goods__quantity">
                           <div class="spinner">
                             <button type="button"><i class="minus"></i>
-                            </button><input type="number" class="input" value="1"><button type="button"><i class="plus"></i></button>
+                            </button><input type="number" class="form-control" value="1"><button type="button"><i class="plus"></i></button>
                           </div>
                           <div class="goods__quantity-price"><b>400 <i class="rub">&#8381;</i></b> шт</div>
                         </div>
@@ -154,7 +162,11 @@
                         </div>
                       </div>
                       <div class="col-auto">
-                        <div class="goods__delete"></div>
+                        <div class="goods__delete">
+                          <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
                       </div>
                     </div>
                     <div class="row align-items-center">
@@ -182,7 +194,7 @@
                         <div class="goods__quantity">
                           <div class="spinner">
                             <button type="button"><i class="minus"></i>
-                            </button><input type="number" class="input" value="1"><button type="button"><i class="plus"></i></button>
+                            </button><input type="number" class="form-control" value="1"><button type="button"><i class="plus"></i></button>
                           </div>
                           <div class="goods__quantity-price"><b>20 <i class="rub">&#8381;</i></b> шт</div>
                         </div>
@@ -193,7 +205,11 @@
                         </div>
                       </div>
                       <div class="col-auto">
-                        <div class="goods__delete"></div>
+                        <div class="goods__delete">
+                          <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
                       </div>
                     </div>
                     <div class="row align-items-center">
@@ -238,16 +254,16 @@
                       <div class="cart-total__promo-input">
                         <div class="row no-gutters">
                           <div class="col">
-                            <input type="text" class="input" placeholder="Есть промокод?">
+                            <input type="text" class="form-control" placeholder="Есть промокод?">
                           </div>
                           <div class="col-auto">
-                            <a href="#" class="btn">применить</a>
+                            <a href="#" class="btn btn-sm btn-blue">применить</a>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-3">
-                      <a href="#" class="btn btn-bordered cart-total__promo-submit">пересчитать</a>
+                      <a href="#" class="btn btn-bordered btn-sm cart-total__promo-submit">пересчитать</a>
                     </div>
                   </div>
                 </div>
@@ -349,21 +365,21 @@
                       <div class="col-4">
                         <div class="input-holder">
                           <label>Номер телефона<span>*</span></label>
-                          <div class="phone"><input type="tel" required class="input" placeholder="(___) ___-__-__"></div>
+                          <div class="phone"><input type="tel" required class="form-control" placeholder="(___) ___-__-__"></div>
                           <div class="invalid-feedback">Укажите номер телефона</div>
                         </div>
                       </div>
                       <div class="col-4">
                         <div class="input-holder <!--is-invalid-->">
                           <label>ФИО<span>*</span></label>
-                          <input type="text" class="input">
+                          <input type="text" class="form-control">
                           <div class="invalid-feedback">Укажите имя получателя</div>
                         </div>
                       </div>
                       <div class="col-4">
                         <div class="input-holder">
                           <label>Электронная почта<span>*</span></label>
-                          <input type="text" class="input">
+                          <input type="text" class="form-control">
                           <div class="invalid-feedback">Укажите электронную почту</div>
                         </div>
                       </div>
@@ -454,35 +470,35 @@
                             <div class="col-4">
                               <div class="input-holder">
                                 <label>Улица</label>
-                                <input type="text" class="input">
+                                <input type="text" class="form-control">
                                 <div class="invalid-feedback"></div>
                               </div>
                             </div>
                             <div class="col-2">
                               <div class="input-holder">
                                 <label>№ дома</label>
-                                <input type="text" class="input">
+                                <input type="text" class="form-control">
                                 <div class="invalid-feedback"></div>
                               </div>
                             </div>
                             <div class="col-2">
                               <div class="input-holder">
                                 <label>Стр.</label>
-                                <input type="text" class="input">
+                                <input type="text" class="form-control">
                                 <div class="invalid-feedback"></div>
                               </div>
                             </div>
                             <div class="col-2">
                               <div class="input-holder">
                                 <label>Подъезд</label>
-                                <input type="text" class="input">
+                                <input type="text" class="form-control">
                                 <div class="invalid-feedback"></div>
                               </div>
                             </div>
                             <div class="col-2">
                               <div class="input-holder">
                                 <label>Индекс</label>
-                                <input type="text" class="input">
+                                <input type="text" class="form-control">
                                 <div class="invalid-feedback"></div>
                               </div>
                             </div>
@@ -540,7 +556,7 @@
                         </div>
                       </div>
                       <div class="col-6 cart-ordering-total__submit">
-                        <button class="btn">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                        <button type="button" class="btn btn-success btn-lg">ПОДТВЕРДИТЬ ЗАКАЗ</button>
                       </div>
                     </div>
                   </div>
