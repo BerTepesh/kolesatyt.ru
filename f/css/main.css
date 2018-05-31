@@ -379,7 +379,7 @@ table.table {
     display: block;
     text-decoration: none; }
 
-.tab-content {
+.tab-pane {
   padding: 15px 0; }
 
 .tab-content > .tab-pane {
@@ -1104,7 +1104,7 @@ tbody.collapse.show {
   line-height: 14px; }
 
 .delivery {
-  margin-bottom: 25px; }
+  margin-bottom: 15px; }
   .delivery__tabs ul li a {
     border: 1px solid #c2c2c2;
     padding: 15px 20px;
