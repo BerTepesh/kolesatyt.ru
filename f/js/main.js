@@ -33,21 +33,3 @@ $(document).ready(function() {
     return false;
   });
 });
-$(function() {
-  $(".modal-inline").fancybox({
-    type: 'inline',
-    fixed: false,
-    fitToView: false,
-    width: '100%',
-    height: "auto",
-    maxWidth: 700,
-    autoSize: false,
-    helpers: {
-      overlay: {
-        css: {
-          'background': 'rgba(0, 0, 0, 0.4)'
-        }
-      }
-    }
-  });
-});

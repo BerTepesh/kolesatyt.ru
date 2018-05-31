@@ -9,21 +9,16 @@
   <meta content='width' name='MobileOptimized' />
   <meta content='yes' name='apple-mobile-web-app-capable' />
   <title>Kolesatyt</title>
-  <link rel="stylesheet" href="f/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="f/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="f/css/bootstrap-select.css">
+  <link rel="stylesheet" href="f/css/bootstrap.min.css">
   <link href="f/slick/slick.css" type="text/css" rel="stylesheet">
-  <link href="f/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="f/css/main.css">
-  <script src="f/js/jquery-3.2.1.min.js"></script>
+  <script src="f/js/jquery-3.3.1.min.js"></script>
   <script src="f/js/bootstrap-select.min.js"></script>
-  <script src="f/js/tether.min.js"></script>
   <script src="f/js/popper.min.js"></script>
-  <script src="f/js/util.js"></script>
-  <script src="f/js/bootstrap.js"></script>
-  <script src="f/js/tooltip.js"></script>
+  <script src="f/js/bootstrap.min.js"></script>
+  <script src="f/js/bootstrap.bundle.min.js"></script>
   <script src="f/slick/slick.min.js"></script>
-  <script src="f/fancybox/jquery.fancybox.pack.js"></script>
   <script src="f/js/jquery.maskedinput.min.js"></script>
   <script src="f/js/main.js"></script>
 </head>
@@ -71,8 +66,8 @@
                       <div class="col-3">
                         <div class="goods__price">
                           <div class="goods__price-holder">
-                            <p>80 800 <i class="rub">&#8381;</i></p>
-                            <b>72 400 <i class="rub">&#8381;</i></b>
+                            <s>80 800 <i class="rub">&#8381;</i></s>
+                            <b class="text-success">72 400 <i class="rub">&#8381;</i></b>
                           </div>
                         </div>
                       </div>
@@ -83,8 +78,7 @@
                     <div class="row align-items-center">
                       <div class="col">
                         <div class="goods__add">
-                          <i class="icon-warn"></i>
-                          Не совместим с авто
+                          <span class="icon-warn mr-1"></span>Не совместим с авто
                         </div>
                       </div>
                     </div>
@@ -121,13 +115,13 @@
                     <div class="row align-items-center">
                       <div class="col">
                         <div class="goods__add">
-                          <i class="icon-check"></i>
+                          <span class="icon-check mr-1"></span>
                           Совместим с авто
                         </div>
                       </div>
                       <div class="col-auto">
                         <a href="#" class="goods__caps btn btn-bordered">
-                          <i class="icon-caps"></i>
+                          <span class="icon-caps mr-2"></span>
                           Подобрать колпаки
                         </a>
                       </div>
@@ -166,7 +160,7 @@
                     <div class="row align-items-center">
                       <div class="col">
                         <div class="goods__add">
-                          <i class="icon-thumb-up"></i>
+                          <span class="icon-thumb-up mr-1"></span>
                           Рекомендуем
                         </div>
                       </div>
@@ -205,7 +199,7 @@
                     <div class="row align-items-center">
                       <div class="col">
                         <div class="goods__add">
-                          <i class="icon-thumb-up"></i>
+                          <span class="icon-thumb-up mr-1"></span>
                           Рекомендуем
                         </div>
                       </div>
@@ -222,8 +216,8 @@
                     </div>
                     <div class="col-3">
                       <div class="cart-total__goods-price">
-                        <p>88 800 <i class="rub">&#8381;</i></p>
-                        <span>7 400 <i class="rub">&#8381;</i></span>
+                        <s>88 800 <i class="rub">&#8381;</i></s>
+                        <span class="text-success">7 400 <i class="rub">&#8381;</i></span>
                       </div>
                     </div>
                   </div>
@@ -337,9 +331,9 @@
                   </div>
                   <div class="col-auto">
                     <div class="cart-ordering__legal">
-                      <div class="row no-gutters">
-                        <div class="col-auto">
-                          <i class="icon-legal"></i>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto mr-2">
+                          <span class="icon-legal"></span>
                         </div>
                         <div class="col">
                           <span>Оформить заказ <br>как юридическое лицо</span>
@@ -356,21 +350,21 @@
                         <div class="input-holder">
                           <label>Номер телефона<span>*</span></label>
                           <div class="phone"><input type="tel" required class="input" placeholder="(___) ___-__-__"></div>
-                          <p>Укажите номер телефона</p>
+                          <div class="invalid-feedback">Укажите номер телефона</div>
                         </div>
                       </div>
                       <div class="col-4">
-                        <div class="input-holder error">
+                        <div class="input-holder <!--is-invalid-->">
                           <label>ФИО<span>*</span></label>
                           <input type="text" class="input">
-                          <p>Укажите имя получателя</p>
+                          <div class="invalid-feedback">Укажите имя получателя</div>
                         </div>
                       </div>
                       <div class="col-4">
                         <div class="input-holder">
                           <label>Электронная почта<span>*</span></label>
                           <input type="text" class="input">
-                          <p>Укажите электронную почту</p>
+                          <div class="invalid-feedback">Укажите электронную почту</div>
                         </div>
                       </div>
                     </div>
@@ -380,11 +374,13 @@
                   </script>
                   <div class="cart-ordering-recipient__add-phone" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<p>Важно указать запасной номер телефона.</p>Если курьер не дозвониться до вас, то заказ будет отменен.">
                     <span>Добавить запасной</span>
-                    <i class="icon-question"></i>
+                    <span class="icon-question"></span>
                   </div>
                   <div class="cart-ordering-recipient__offers">
-                    <input type="checkbox" class="checkbox" id="offers">
-                    <label for="offers">Хочу получать персональные предложения и скидки по эл. почте</label>
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="offers" class="custom-control-input">
+                      <label for="offers" class="custom-control-label">Хочу получать персональные предложения и скидки по эл. почте</label>
+                    </div>
                   </div>
                 </div>
                 <div class="cart-ordering-delivery">
@@ -401,64 +397,159 @@
                     </div>
                   </div>
                   <div class="delivery">
-                    <ul class="delivery__tabs nav nav-tabs row no-gutters">
-                      <li class="col-6">
-                        <a data-toggle="tab" href="#panel1" class="active">
-                          <div class="row no-gutters">
-                            <div class="col-auto">
-                              <div class="delivery__tabs-ico">
-                                <i class="icon-courier"></i>
+                    <div class="delivery__tabs <!--is-invalid-->">
+                      <ul class="nav nav-tabs row no-gutters">
+                        <li class="col-6">
+                          <a data-toggle="tab" href="#panel1">
+                            <div class="row no-gutters">
+                              <div class="col-auto">
+                                <div class="delivery__tabs-ico">
+                                  <span class="icon-courier"></span>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="delivery__tabs-type">
+                                  <b>Курьером</b>
+                                  до подъезда
+                                </div>
+                              </div>
+                              <div class="col-3">
+                                <div class="delivery__tabs-price">
+                                  <b>500 <i class="rub">й</i></b>
+                                  завтра
+                                </div>
                               </div>
                             </div>
-                            <div class="col">
-                              <div class="delivery__tabs-type">
-                                <b>Курьером</b>
-                                до подъезда
+                          </a>
+                        </li>
+                        <li class="col-6">
+                          <a data-toggle="tab" href="#panel2">
+                            <div class="row no-gutters">
+                              <div class="col-auto">
+                                <div class="delivery__tabs-ico">
+                                  <span class="icon-car"></span>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="delivery__tabs-type">
+                                  <b>Самовывоз</b>
+                                </div>
+                              </div>
+                              <div class="col-3">
+                                <div class="delivery__tabs-price">
+                                  <b>99 <i class="rub">й</i></b>
+                                  28.03.2018
+                                </div>
                               </div>
                             </div>
-                            <div class="col-3">
-                              <div class="delivery__tabs-price">
-                                <b>500 <i class="rub">й</i></b>
-                                завтра
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="col-6">
-                        <a data-toggle="tab" href="#panel2">
-                          <div class="row no-gutters">
-                            <div class="col-auto">
-                              <div class="delivery__tabs-ico">
-                                <i class="icon-car"></i>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="delivery__tabs-type">
-                                <b>Самовывоз</b>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="delivery__tabs-price">
-                                <b>99 <i class="rub">й</i></b>
-                                28.03.2018
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="invalid-feedback">Выберите способ доставки</div>
+                    </div>
                     <div class="delivery__content tab-content">
                       <div id="panel1" class="tab-pane fade">
-1
+                        <div class="delivery-courier">
+                          <div class="row">
+                            <div class="col-4">
+                              <div class="input-holder">
+                                <label>Улица</label>
+                                <input type="text" class="input">
+                                <div class="invalid-feedback"></div>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="input-holder">
+                                <label>№ дома</label>
+                                <input type="text" class="input">
+                                <div class="invalid-feedback"></div>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="input-holder">
+                                <label>Стр.</label>
+                                <input type="text" class="input">
+                                <div class="invalid-feedback"></div>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="input-holder">
+                                <label>Подъезд</label>
+                                <input type="text" class="input">
+                                <div class="invalid-feedback"></div>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="input-holder">
+                                <label>Индекс</label>
+                                <input type="text" class="input">
+                                <div class="invalid-feedback"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <div id="panel2" class="tab-pane fade">
 2
                       </div>
                     </div>
                   </div>
+                  <div class="cart-ordering-total">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="row cart-ordering-total__goods">
+                          <div class="col-6">
+                            <div class="cart-ordering-total__goods-text">
+                              Товары
+                              <span>с учетом скидки</span>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <b class="cart-ordering-total__goods-price">
+                              <b>80 400 <i class="rub">&#8381;</i></b>
+                            </b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="custom-checkbox">
+                          <input type="checkbox" id="no-call" class="custom-control-input">
+                          <label for="no-call" class="custom-control-label">Не перезванивать</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="row">
+                          <div class="col-6">
+                            Доставка
+                          </div>
+                          <div class="col-6">
+                            <b>не выбрана</b>
+                          </div>
+                          <div class="col-6 mt-auto">
+                            <div class="cart-ordering-total__payment">
+                              ИТОГО К ОПЛАТЕ
+                            </div>
+                          </div>
+                          <div class="col-6 mt-auto">
+                            <div class="cart-ordering-total__price">
+                              <b>80 400 <i class="rub">&#8381;</i></b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 cart-ordering-total__submit">
+                        <button class="btn">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="cart__conditions">
+                Нажимая на кнопку, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии <a href="#">с Условиями</a>, а также <a href="#">с Условиями продажи</a>
+              </div>
+
             </div>
           </div>
         </div>
