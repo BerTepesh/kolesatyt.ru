@@ -268,16 +268,19 @@
                   </div>
                 </div>
               </div>
-              <div class="cart-detail">
-                <div class="cart-detail__title collapsed" data-toggle="collapse" data-target="#scroll-down1" aria-expanded="false" aria-controls="scroll-down1">
-                  Детализация заказа: <b>Ваш заказ будет отправлен двумя посылками</b>
-                  <p>
-                    <span>Развернуть</span>
-                    <span>Скрыть</span>
+              <div class="alert alert-danger">
+                <div class="alert__title">
+                  <p class="mb-2">
+                    Детализация заказа:
+                    <strong>Ваш заказ будет отправлен двумя посылками</strong>
                   </p>
+                  <a href="#" class="collapsed font-georgia" data-toggle="collapse" data-target="#scroll-down1" aria-expanded="false" aria-controls="scroll-down1">
+                    <em>Развернуть</em>
+                    <em>Скрыть</em>
+                  </a>
                 </div>
-                <div class="cart-detail__content collapse" id="scroll-down1">
-                  <ul class="cart-detail__package">
+                <div class="alert__content collapse" id="scroll-down1">
+                  <ul class="cart-detail">
                     <li>
                       <div class="cart-detail__subtitle">Посылка 1:</div>
                       <div class="row">
@@ -352,7 +355,7 @@
                           <span class="icon-legal"></span>
                         </div>
                         <div class="col">
-                          <span>Оформить заказ <br>как юридическое лицо</span>
+                          <span class="font-georgia text-muted">Оформить заказ <br>как юридическое лицо</span>
                         </div>
                       </div>
                     </div>
@@ -395,7 +398,7 @@
                   <div class="cart-ordering-recipient__offers">
                     <div class="custom-checkbox">
                       <input type="checkbox" id="offers" class="custom-control-input">
-                      <label for="offers" class="custom-control-label">Хочу получать персональные предложения и скидки по эл. почте</label>
+                      <label for="offers" class="custom-control-label text-muted">Хочу получать персональные предложения и скидки по эл. почте</label>
                     </div>
                   </div>
                 </div>
@@ -506,7 +509,44 @@
                         </div>
                       </div>
                       <div id="panel2" class="tab-pane fade">
-2
+                        <div class="delivery-pickup">
+                          <div class="delivery-pickup__address mb-2">
+                            <div class="font-weight-light mb-1">Забрать заказ в KOLESATYT по адресу:</div>
+                            Ярославская обл., г. Ярославль, ул. Базовая, д. 3
+                          </div>
+                          <div class="delivery-pickup__schedule mb-3">
+                            <div class="font-weight-light">Часы работы:</div>
+                            <div class="row">
+                              <div class="col-2 font-weight-light">
+                                Пн-Пт:
+                              </div>
+                              <div class="col">
+                                c 09.30 до 18.00
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-2 font-weight-light">
+                                Сб:
+                              </div>
+                              <div class="col">
+                                c 09.00 до 11.00
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-2 font-weight-light">
+                                Вс:
+                              </div>
+                              <div class="col">
+                                выходной
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6">
+                              <a href="#" class="btn btn-block btn-bordered">Карта точек самовывоза</a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -517,7 +557,7 @@
                           <div class="col-6">
                             <div class="cart-ordering-total__goods-text">
                               Товары
-                              <span>с учетом скидки</span>
+                              <span class="text-muted">с учетом скидки</span>
                             </div>
                           </div>
                           <div class="col-6">
@@ -530,7 +570,7 @@
                       <div class="col-6">
                         <div class="custom-checkbox">
                           <input type="checkbox" id="no-call" class="custom-control-input">
-                          <label for="no-call" class="custom-control-label">Не перезванивать</label>
+                          <label for="no-call" class="custom-control-label text-muted">Не перезванивать</label>
                         </div>
                       </div>
                     </div>
@@ -556,14 +596,14 @@
                         </div>
                       </div>
                       <div class="col-6 cart-ordering-total__submit">
-                        <button type="button" class="btn btn-success btn-lg">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                        <button type="button" class="btn btn-success btn-lg btn-block">ПОДТВЕРДИТЬ ЗАКАЗ</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="cart__conditions">
-                Нажимая на кнопку, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии <a href="#">с Условиями</a>, а также <a href="#">с Условиями продажи</a>
+              <div class="cart__conditions text-muted">
+                Нажимая на кнопку, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии <a href="#" class="text-muted">с Условиями</a>, а также <a href="#" class="text-muted">с Условиями продажи</a>
               </div>
 
             </div>
