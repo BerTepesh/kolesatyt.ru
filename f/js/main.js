@@ -22,12 +22,12 @@ $(document).ready(function() {
     });
   });
   $('.spinner button:last-of-type').on('click', function() {
-    $(this).closest('.spinner').find('.input').val( parseInt($(this).closest('.spinner').find('input').val(), 10) + 1);
+    $(this).closest('.spinner').find('.form-control').val( parseInt($(this).closest('.spinner').find('input').val(), 10) + 1);
     return false;
   });
   $('.spinner button:first-of-type').on('click', function() {
-    if(parseInt($(this).closest('.spinner').find('.input').val()) >= 2) {
-      $(this).closest('.spinner').find('.input').val( parseInt($(this).closest('.spinner').find('input').val(), 10) - 1);
+    if(parseInt($(this).closest('.spinner').find('.form-control').val()) >= 2) {
+      $(this).closest('.spinner').find('.form-control').val( parseInt($(this).closest('.spinner').find('input').val(), 10) - 1);
       return false;
     }
     return false;
