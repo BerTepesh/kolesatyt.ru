@@ -130,11 +130,87 @@
                         </div>
                       </div>
                       <div class="col-12 col-sm-auto">
-                        <a href="#" class="goods__caps btn btn-bordered btn-sm">
+                        <a href="#" class="goods__caps add-goods-btn btn btn-bordered btn-sm collapsed" data-toggle="collapse" data-target="#scroll-down2" aria-expanded="false" aria-controls="scroll-down2">
                           <span class="icon-caps mr-2"></span>
-                          Подобрать колпаки
+                          <em>Подобрать колпаки</em>
+                          <em>Скрыть колпаки</em>
                         </a>
                       </div>
+                    </div>
+                    <div class="add-goods-content collapse" id="scroll-down2">
+                      <ul class="add-goods-slider" id="ag1">
+                        <li>
+                          <div class="row no-gutters mb-3">
+                            <div class="col-auto">
+                              <div class="add-goods__img mr-2">
+                                <img src="f/img/goods/5.png" alt="">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <a href="#">SKS 415 Колпак колеса гибкий 16" (4 шт.)</a>
+                              <b class="pt-2">1 937 <i class="rub">&#8381;</i></b>
+                            </div>
+                          </div>
+                          <button class="btn btn-sm btn-block font-weight-normal">в корзину</button>
+                        </li>
+                        <li>
+                          <div class="row no-gutters mb-3">
+                            <div class="col-auto">
+                              <div class="add-goods__img mr-2">
+                                <img src="f/img/goods/5.png" alt="">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <a href="#">SKS 415 Колпак колеса гибкий 16" (4 шт.)</a>
+                              <b class="pt-2">1 937 <i class="rub">&#8381;</i></b>
+                            </div>
+                          </div>
+                          <button class="btn btn-sm btn-block font-weight-normal">в корзину</button>
+                        </li>
+                        <li>
+                          <div class="row no-gutters mb-3">
+                            <div class="col-auto">
+                              <div class="add-goods__img mr-2">
+                                <img src="f/img/goods/5.png" alt="">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <a href="#">SKS 415 Колпак колеса гибкий 16" (4 шт.)</a>
+                              <b class="pt-2">1 937 <i class="rub">&#8381;</i></b>
+                            </div>
+                          </div>
+                          <button class="btn btn-sm btn-block font-weight-normal">в корзину</button>
+                        </li>
+                        <li>
+                          <div class="row no-gutters mb-3">
+                            <div class="col-auto">
+                              <div class="add-goods__img mr-2">
+                                <img src="f/img/goods/5.png" alt="">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <a href="#">SKS 415 Колпак колеса гибкий 16" (4 шт.)</a>
+                              <b class="pt-2">1 937 <i class="rub">&#8381;</i></b>
+                            </div>
+                          </div>
+                          <button class="btn btn-sm btn-block font-weight-normal">в корзину</button>
+                        </li>
+                        <li>
+                          <div class="row no-gutters mb-3">
+                            <div class="col-auto">
+                              <div class="add-goods__img mr-2">
+                                <img src="f/img/goods/5.png" alt="">
+                              </div>
+                            </div>
+                            <div class="col">
+                              <a href="#">SKS 415 Колпак колеса гибкий 16" (4 шт.)</a>
+                              <b class="pt-2">1 937 <i class="rub">&#8381;</i></b>
+                            </div>
+                          </div>
+                          <button class="btn btn-sm btn-block font-weight-normal">в корзину</button>
+                        </li>
+                      </ul>
+
                     </div>
                   </li>
                   <li>
@@ -228,6 +304,19 @@
                     </div>
                   </li>
                 </ul>
+                <script>
+                  $(document).ready(function(){
+                    $('#ag1').slick({
+                      'prevArrow': '<button type="button" class="prev"></button>',
+                      'nextArrow': '<button type="button" class=next"></button>',
+                      'appendArrows': $('#ag1 .add-goods-slider__nav'),
+                      'dots': true,
+                      'arrows': true,
+                      'infinite': false,
+                      'slidesToShow': getGridSize()
+                    });
+                  });
+                </script>
                 <div class="cart-total">
                   <div class="row cart-total__goods">
                     <p class="col">4 товара, 57 кг</p>
@@ -279,66 +368,69 @@
                     <em>Скрыть</em>
                   </a>
                 </div>
-                <div class="alert__content collapse" id="scroll-down1">
-                  <ul class="cart-detail">
-                    <li>
-                      <div class="cart-detail__subtitle">Посылка 1:</div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="cart-detail__name cart-detail__name_main">NOKIAN HAKKAPELIITTA 9 SUV 295/40R21 111T XL ШИП</div>
+                <div class="collapse" id="scroll-down1">
+                  <div class="alert__content">
+                    <ul class="cart-detail">
+                      <li>
+                        <div class="cart-detail__subtitle">Посылка 1:</div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="cart-detail__name cart-detail__name_main">NOKIAN HAKKAPELIITTA 9 SUV 295/40R21 111T XL ШИП</div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="cart-detail__quantity">10 шт</div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="cart-detail__price cart-detail__price_ex">80 800 <i class="rub">й</i></div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="cart-detail__price cart-detail__price_promo">72 400 <i class="rub">й</i></div>
+                          </div>
                         </div>
-                        <div class="col-sm-2">
-                          <div class="cart-detail__quantity">10 шт</div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="cart-detail__name">Вентиль TR-414C хромированный</div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="cart-detail__quantity">4 шт</div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="cart-detail__price">1 600 <i class="rub">й</i></div>
+                          </div>
                         </div>
-                        <div class="col-sm-2">
-                          <div class="cart-detail__price cart-detail__price_ex">80 800 <i class="rub">й</i></div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="cart-detail__name">Пакет для шин и колес</div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="cart-detail__quantity">4 шт</div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="cart-detail__price">80 <i class="rub">й</i></div>
+                          </div>
                         </div>
-                        <div class="col-sm-2">
-                          <div class="cart-detail__price cart-detail__price_promo">72 400 <i class="rub">й</i></div>
+                        <div class="cart-detail__shiping">Доставка не выбрана</div>
+                        <div class="cart-detail__total">Итогого сумма посылки: 74 080 <i class="rub">й</i></div>
+                      </li>
+                      <li>
+                        <div class="cart-detail__subtitle">Посылка 2:</div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="cart-detail__name cart-detail__name_main">REPLICA OPL11 7x17/5x115 ET45 D70.3 W</div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="cart-detail__price">1 шт</div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="cart-detail__price">6 320 <i class="rub">й</i></div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="cart-detail__name">Вентиль TR-414C хромированный</div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="cart-detail__quantity">4 шт</div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="cart-detail__price">1 600 <i class="rub">й</i></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="cart-detail__name">Пакет для шин и колес</div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="cart-detail__quantity">4 шт</div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="cart-detail__price">80 <i class="rub">й</i></div>
-                        </div>
-                      </div>
-                      <div class="cart-detail__shiping">Доставка не выбрана</div>
-                      <div class="cart-detail__total">Итогого сумма посылки: 74 080 <i class="rub">й</i></div>
-                    </li>
-                    <li>
-                      <div class="cart-detail__subtitle">Посылка 2:</div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="cart-detail__name cart-detail__name_main">REPLICA OPL11 7x17/5x115 ET45 D70.3 W</div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="cart-detail__price">1 шт</div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="cart-detail__price">6 320 <i class="rub">й</i></div>
-                        </div>
-                      </div>
-                      <div class="cart-detail__shiping">Доставка не выбрана</div>
-                      <div class="cart-detail__total">Итогого сумма посылки: 6 320 <i class="rub">й</i></div>
-                    </li>
-                  </ul>
+                        <div class="cart-detail__shiping">Доставка не выбрана</div>
+                        <div class="cart-detail__total">Итогого сумма посылки: 6 320 <i class="rub">й</i></div>
+                      </li>
+                    </ul>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -470,39 +562,153 @@
                       <div id="panel1" class="tab-pane fade">
                         <div class="delivery-courier">
                           <div class="row">
-                            <div class="col-4">
+                            <div class="col-12 col-md-4">
                               <div class="input-holder">
                                 <label>Улица</label>
                                 <input type="text" class="form-control">
                                 <div class="invalid-feedback"></div>
                               </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-3 col-md-2">
                               <div class="input-holder">
                                 <label>№ дома</label>
                                 <input type="text" class="form-control">
                                 <div class="invalid-feedback"></div>
                               </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-3 col-md-2">
                               <div class="input-holder">
                                 <label>Стр.</label>
                                 <input type="text" class="form-control">
                                 <div class="invalid-feedback"></div>
                               </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-3 col-md-2">
                               <div class="input-holder">
                                 <label>Подъезд</label>
                                 <input type="text" class="form-control">
                                 <div class="invalid-feedback"></div>
                               </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-3 col-md-2">
                               <div class="input-holder">
                                 <label>Индекс</label>
                                 <input type="text" class="form-control">
                                 <div class="invalid-feedback"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="delivery-courier__date pick-date">
+                            <label>Дата</label>
+                            <div class="pick-date__btn collapsed" data-toggle="collapse" data-target="#scroll-down3" aria-expanded="false" aria-controls="scroll-down3">
+                              <div class="row align-items-center">
+                                <span class="col">Суббота, 28 апреля, с 09:00 до 18:00</span>
+                                <b class="col-auto">Бесплатно</b>
+                              </div>
+                            </div>
+                            <div class="pick-date__content collapse" id="scroll-down3">
+                              <ul class="pick-date__nums row nav nav-tabs no-gutters">
+                                <li class="col">
+                                  <a href="#dp1" data-toggle="tab" class="active show">
+                                    <b>Сб</b>
+                                    <span>28 апр</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a href="#dp2" data-toggle="tab">
+                                    <b>Чт</b>
+                                    <span>3 май</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a href="#dp3" data-toggle="tab">
+                                    <b>Пт</b>
+                                    <span>4</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a href="#dp4" data-toggle="tab">
+                                    <b>Сб</b>
+                                    <span>5</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a href="#dp5" data-toggle="tab">
+                                    <b>Вс</b>
+                                    <span>6</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a href="#dp6" data-toggle="tab">
+                                    <b>Пн</b>
+                                    <span>7</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a href="#dp7" data-toggle="tab">
+                                    <b>Вт</b>
+                                    <span>8</span>
+                                  </a>
+                                </li>
+                              </ul>
+                              <div class="tab-content">
+                                <div id="dp1" class="tab-pane fade active show">
+                                  <div class="delivery-time btn-group-toggle" data-toggle="buttons">
+                                    <div class="delivery-time__title mb-2  ">ВРЕМЯ ДОСТАВКИ</div>
+                                    <div class="row mb-2 align-items-center">
+                                      <div class="col-4 col-sm-3">
+                                        <b>Бесплатно</b>
+                                      </div>
+                                      <div class="col">
+                                        <label class="btn btn-sm active">
+                                          <input type="radio" name="time-num" id="tn1" autocomplete="off" checked> 09:00 - 18:00
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                      <div class="col-4 col-sm-3">
+                                        <b>500 <i class="rub">&#8381;</i></b>
+                                      </div>
+                                      <div class="col">
+                                        <ul class="row">
+                                          <li class="col-auto">
+                                            <label class="btn">
+                                              <input type="radio" name="time-num" id="tn2" autocomplete="off">09:00 - 12:00
+                                            </label>
+                                          </li>
+                                          <li class="col-auto">
+                                            <label class="btn">
+                                              <input type="radio" name="time-num" id="tn3" autocomplete="off">12:00 - 15:00
+                                            </label>
+                                          </li>
+                                          <li class="col-auto">
+                                            <label class="btn">
+                                              <input type="radio" name="time-num" id="tn4" autocomplete="off">15:00 - 18:00
+                                            </label>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="dp2" class="tab-pane fade">
+
+                                </div>
+                                <div id="dp3" class="tab-pane fade">
+
+                                </div>
+                                <div id="dp4" class="tab-pane fade">
+
+                                </div>
+                                <div id="dp5" class="tab-pane fade">
+
+                                </div>
+                                <div id="dp6" class="tab-pane fade">
+
+                                </div>
+                                <div id="dp7" class="tab-pane fade">
+
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -517,7 +723,7 @@
                           <div class="delivery-pickup__schedule mb-3">
                             <div class="font-weight-light">Часы работы:</div>
                             <div class="row">
-                              <div class="col-2 font-weight-light">
+                              <div class="col-3 col-sm-2 font-weight-light">
                                 Пн-Пт:
                               </div>
                               <div class="col">
@@ -525,7 +731,7 @@
                               </div>
                             </div>
                             <div class="row">
-                              <div class="col-2 font-weight-light">
+                              <div class="col-3 col-sm-2 font-weight-light">
                                 Сб:
                               </div>
                               <div class="col">
@@ -533,7 +739,7 @@
                               </div>
                             </div>
                             <div class="row">
-                              <div class="col-2 font-weight-light">
+                              <div class="col-3 col-sm-2 font-weight-light">
                                 Вс:
                               </div>
                               <div class="col">
@@ -542,7 +748,7 @@
                             </div>
                           </div>
                           <div class="row">
-                            <div class="col-6">
+                            <div class="col-auto col-sm-6">
                               <a href="#" class="btn btn-block btn-bordered">Карта точек самовывоза</a>
                             </div>
                           </div>

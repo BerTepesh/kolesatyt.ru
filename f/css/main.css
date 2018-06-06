@@ -206,9 +206,16 @@ label {
     font-size: 14px; }
   .btn-sm {
     padding: 9px 15px;
-    text-transform: lowercase;
     font-size: 16px;
     line-height: 16px; }
+  .btn-lime {
+    background: #f5fce9;
+    color: #606060;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 7px 12px; }
+    .btn-lime:hover {
+      color: #606060; }
   .btn-blue {
     background: #262b2f; }
   .btn-white {
@@ -273,6 +280,25 @@ input[type='tel'].form-control {
 
 button {
   cursor: pointer; }
+
+.btn-group-toggle input {
+  display: none; }
+
+.btn-group-toggle label {
+  margin-bottom: 0; }
+
+.btn-group-toggle label.btn {
+  color: #606060;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 7px 12px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background: transparent; }
+  .btn-group-toggle label.btn.active {
+    background: #f5fce9; }
+  .btn-group-toggle label.btn:hover {
+    color: #606060; }
 
 .minus {
   width: 15px;
@@ -660,9 +686,6 @@ textarea.form-control {
 .fancybox-inner {
   overflow: hidden !important; }
 
-.collapse {
-  display: none; }
-
 .collapse.show {
   display: block; }
 
@@ -944,7 +967,7 @@ tbody.collapse.show {
 .goods {
   list-style: none;
   padding-left: 0; }
-  .goods li {
+  .goods > li {
     padding: 20px 10px 15px;
     border-bottom: 1px solid rgba(231, 231, 231, 0.6);
     position: relative; }
@@ -1020,6 +1043,84 @@ tbody.collapse.show {
     font-size: 12px;
     line-height: 14px; }
 
+.add-goods-btn em {
+  font-style: normal; }
+  .add-goods-btn em:first-of-type {
+    display: none; }
+
+.add-goods-btn.collapsed em:last-of-type {
+  display: none; }
+
+.add-goods-btn.collapsed em:first-of-type {
+  display: inline-block; }
+
+.add-goods__img {
+  width: 55px; }
+  .add-goods__img img {
+    max-width: 100%; }
+
+.add-goods-slider {
+  list-style: none;
+  padding: 20px 0 0;
+  width: 100%; }
+  .add-goods-slider li {
+    line-height: 14px; }
+    .add-goods-slider li a {
+      color: #606060;
+      font-size: 12px;
+      border-bottom: 1px solid rgba(96, 96, 96, 0.2); }
+    .add-goods-slider li b {
+      display: block;
+      font-size: 14px;
+      line-height: 13px;
+      color: #303030; }
+    .add-goods-slider li .btn {
+      font-size: 14px;
+      line-height: 13px;
+      padding-top: 6px;
+      padding-bottom: 6px; }
+  .add-goods-slider .slick-list {
+    margin: 0 -20px; }
+  .add-goods-slider .slick-slide {
+    margin: 0 20px; }
+    .add-goods-slider .slick-slide:focus {
+      outline: none; }
+  .add-goods-slider .slick-track {
+    width: 10000px !important; }
+  .add-goods-slider .slick-initialized .slick-slide {
+    width: 500px !important; }
+  .add-goods-slider .slick-dots {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin-left: -10px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    line-height: 10px; }
+    .add-goods-slider .slick-dots li {
+      display: inline-block;
+      vertical-align: middle;
+      width: 8px;
+      height: 8px;
+      border: 4px solid #c4c4c4;
+      cursor: pointer;
+      margin-left: 10px;
+      border-radius: 50%;
+      -webkit-transition: border .3s ease;
+      transition: border .3s ease; }
+      .add-goods-slider .slick-dots li button {
+        display: none; }
+      .add-goods-slider .slick-dots li.slick-active {
+        border: 2px solid #6A9C1D;
+        width: 10px;
+        height: 10px; }
+
+.collapse:not(.show) {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0; }
+
 .alert {
   padding: 0;
   border-radius: 0;
@@ -1045,11 +1146,13 @@ tbody.collapse.show {
         display: inline-block; }
         .alert__title a.collapsed em:last-of-type {
           display: none; }
+  .alert-danger {
+    background: transparent; }
   .alert-danger .alert__title {
     background: #f7c1c8; }
   .alert__content {
-    padding: 15px 20px 5px;
-    background: #fff; }
+    background: #fff;
+    padding: 15px 20px 5px; }
 
 .cart-detail {
   list-style: none;
@@ -1152,6 +1255,96 @@ tbody.collapse.show {
 
 .delivery-pickup__schedule {
   line-height: 21px; }
+
+.pick-date__btn {
+  border: 1px solid #c2c2c2;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 30px 10px 15px;
+  position: relative;
+  cursor: pointer; }
+  .pick-date__btn:before {
+    content: '';
+    right: 10px;
+    top: 0;
+    bottom: 7px;
+    margin: auto 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top: 4px solid rgba(96, 96, 96, 0.6);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .pick-date__btn.collapsed:before {
+    -webkit-transform: none;
+            transform: none;
+    bottom: -3px; }
+  .pick-date__btn b {
+    font-size: 16px;
+    line-height: 15px;
+    color: #303030; }
+
+.pick-date__content {
+  border: 1px solid #c2c2c2;
+  border-top: none; }
+
+.pick-date__nums {
+  list-style: none;
+  margin-bottom: 0;
+  border-bottom: 2px solid #c2c2c2; }
+  @media (min-width: 576px) {
+    .pick-date__nums {
+      padding: 0 20px; } }
+  .pick-date__nums li {
+    min-height: 100%; }
+    .pick-date__nums li a {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+      height: 100%; }
+      .pick-date__nums li a.active.show {
+        background: #f5fce9; }
+        .pick-date__nums li a.active.show:before, .pick-date__nums li a.active.show:after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          width: 0;
+          height: 0;
+          margin: 0 auto;
+          border: 18px solid transparent;
+          border-top: 8px solid #c2c2c2; }
+          @media (min-width: 576px) {
+            .pick-date__nums li a.active.show:before, .pick-date__nums li a.active.show:after {
+              border: 25px solid transparent;
+              border-top: 12px solid #c2c2c2; } }
+        .pick-date__nums li a.active.show:after {
+          border-top-color: #f5fce9;
+          margin-top: -2px; }
+      .pick-date__nums li a b {
+        color: #000;
+        display: block;
+        font-size: 18px;
+        line-height: 17px; }
+      .pick-date__nums li a span {
+        color: #606060;
+        font-size: 14px;
+        line-height: 13px;
+        display: block; }
+
+.delivery-time {
+  padding: 10px 15px 0; }
+  .delivery-time__title {
+    font-size: 14px;
+    line-height: 13px;
+    color: #303030; }
+  .delivery-time ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0; }
 
 .footer {
   -webkit-box-flex: 0;

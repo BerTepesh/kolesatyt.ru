@@ -2,16 +2,11 @@
 
 }());
 
-function getGridSize(cols) {
-  if(cols == 4) {
-    return ($(window).innerWidth() < 768) ? 1 :
-        ($(window).innerWidth() < 992) ? 2 :
-          ($(window).innerWidth() < 1200) ? 3 : 4;
-  }
+function getGridSize() {
   return ($(window).innerWidth() < 576) ? 1 :
     ($(window).innerWidth() < 768) ? 2 :
     ($(window).innerWidth() < 992) ? 3 :
-      ($(window).innerWidth() < 1200) ? 4 : 5
+      ($(window).innerWidth() < 1280) ? 4 : 3;
 };
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
