@@ -71,6 +71,11 @@ a:hover .icon-caps {
   height: 35px;
   background-position: -165px -20px; }
 
+.icon-hint {
+  width: 16px;
+  height: 16px;
+  background-position: -179px 0; }
+
 @font-face {
   font-family: 'Rub';
   src: url("../../f/fonts/RUBSN.otf") format("opentype");
@@ -363,18 +368,19 @@ button {
       background: url(../../f/img/sprite.png) no-repeat;
       background-position: -45px -69px; }
 
-.num-list {
+.count-list {
   counter-reset: li;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  margin-bottom: -15px; }
 
-.num-list li {
+.count-list li {
   position: relative;
-  padding-left: 35px;
+  padding-left: 20px;
   margin-bottom: 15px; }
 
-.num-list li:before {
-  content: counter(li) ".";
+.count-list li:before {
+  content: counter(li);
   counter-increment: li;
   font-weight: bold;
   color: #6A9C1D;
@@ -874,6 +880,8 @@ tbody.collapse.show {
       cursor: pointer; }
       .cart-ordering__legal span.icon-legal {
         border-bottom: none; }
+    .cart-ordering__legal a.active {
+      display: none; }
   .cart-ordering__subtitle {
     font-size: 14px;
     line-height: 13px;
@@ -1364,10 +1372,17 @@ tbody.collapse.show {
     padding-left: 0;
     margin-bottom: 0; }
 
+.payment .tab-pane {
+  padding: 0; }
+
 .payment__title {
   font-size: 14px;
   line-height: 13px;
   color: #303030; }
+
+.payment__hint {
+  font-size: 14px;
+  line-height: 16px; }
 
 .payment__types ul {
   list-style: none;

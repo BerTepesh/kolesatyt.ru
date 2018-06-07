@@ -441,15 +441,27 @@
                     <div class="cart-ordering__title">Оформление заказа</div>
                   </div>
                   <div class="col-auto">
-                    <div class="cart-ordering__legal">
-                      <div class="row no-gutters align-items-center">
+                    <div class="cart-ordering__legal nav nav-tabs">
+                      <a href="#lg2" class="row no-gutters align-items-center" data-toggle="tab">
                         <div class="col-auto mr-2">
                           <span class="icon-legal"></span>
                         </div>
                         <div class="col">
-                          <span class="font-georgia text-muted">Оформить заказ <br>как юридическое лицо</span>
+                          <span class="font-georgia text-muted">
+                            Оформить заказ <br>как юридическое лицо
+                          </span>
                         </div>
-                      </div>
+                      </a>
+                      <a href="#lg1" class="row no-gutters align-items-center active show" data-toggle="tab">
+                        <div class="col-auto mr-2">
+                          <span class="icon-legal"></span>
+                        </div>
+                        <div class="col">
+                          <span class="font-georgia text-muted">
+                            Оформить заказ <br>как физическое лицо
+                          </span>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -718,53 +730,209 @@
                           <div>Завтра, 24 апреля с 09:00 до 18:00 <b class="ml-1">99 <i class="rub">&#8381;</i></b></div>
                         </div>
                         <div class="payment">
-                          <div class="payment__title mb-3">ОПЛАТА</div>
-                          <div class="payment__types">
-                            <ul class="row mb-3">
-                              <li class="col-12 col-md-4">
-                                <a href="#" class="row no-gutters h-100 align-items-center">
-                                  <div class="col-auto mr-2">
-                                    <span class="icon-wallet"></span>
-                                  </div>
-                                  <div class="col">
-                                    При получении наличными
-                                  </div>
-                                </a>
-                              </li>
-                              <li class="col-12 col-md-4">
-                                <a href="#" class="row no-gutters h-100 align-items-center">
-                                  <div class="col-auto mr-2">
+                          <div class="tab-content">
+                            <div class="payment__title mb-3">ОПЛАТА</div>
+                            <div id="lg1" class="tab-pane fade active show">
+                              <div class="payment__types">
+                                <ul class="row mb-3">
+                                  <li class="col-12 col-md-4">
+                                    <a href="#" class="row no-gutters h-100 align-items-center">
+                                      <div class="col-auto mr-2">
+                                        <span class="icon-wallet"></span>
+                                      </div>
+                                      <div class="col">
+                                        При получении наличными
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="col-12 col-md-4">
+                                    <a href="#" class="row no-gutters h-100 align-items-center">
+                                      <div class="col-auto mr-2">
+                                        <span class="icon-card"></span>
+                                      </div>
+                                      <div class="col">
+                                        Онлайн банковской картой
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li class="col-12 col-md-4">
+                                    <a href="#" class="row no-gutters h-100 align-items-center">
+                                      <div class="col-auto mr-2">
+                                        <span class="icon-agreement"></span>
+                                      </div>
+                                      <div class="col">
+                                        Безналичный расчет
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+                                <a href="#" class="font-georgia payment__hide mb-4"><em>Скрыть все, кроме выбранного</em></a>
+                                <div class="payment__selected row no-gutters mb-4">
+                                  <div class="col-auto mr-2 pt-1">
                                     <span class="icon-card"></span>
                                   </div>
                                   <div class="col">
-                                    Онлайн банковской картой
+                                    <b>Онлайн банковской картой:</b> Принимаем банковские карты Visa, MasterCard, Maestro, American Express и Мир. <div>Выдача заказа по паспорту — проверьте имя получателя.</div>
                                   </div>
-                                </a>
-                              </li>
-                              <li class="col-12 col-md-4">
-                                <a href="#" class="row no-gutters h-100 align-items-center">
-                                  <div class="col-auto mr-2">
-                                    <span class="icon-agreement"></span>
+                                </div>
+                                <div class="row">
+                                  <div class="col col-sm-6">
+                                    <a href="#" class="btn btn-block btn-bordered">Изменить способ оплаты</a>
                                   </div>
-                                  <div class="col">
-                                    Безналичный расчет
-                                  </div>
-                                </a>
-                              </li>
-                            </ul>
-                            <a href="#" class="font-georgia payment__hide mb-4"><em>Скрыть все, кроме выбранного</em></a>
-                          </div>
-                          <div class="payment__selected row no-gutters mb-4">
-                            <div class="col-auto mr-2 pt-1">
-                              <span class="icon-card"></span>
+                                </div>
+                              </div>
                             </div>
-                            <div class="col">
-                              <b>Онлайн банковской картой:</b> Принимаем банковские карты Visa, MasterCard, Maestro, American Express и Мир. <div>Выдача заказа по паспорту — проверьте имя получателя.</div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col col-sm-6">
-                              <a href="#" class="btn btn-block btn-bordered">Изменить способ оплаты</a>
+                            <div id="lg2" class="tab-pane fade">
+                              <div class="row no-gutters mb-4 align-items-center">
+                                <div class="col-auto mr-3">
+                                  <span class="icon-agreement"></span>
+                                </div>
+                                <div class="col">
+                                  <b>По безналичному расчету</b>
+                                </div>
+                              </div>
+                              <div class="payment__title mb-2">РЕКВИЗИТЫ ЮРИДИЧЕСКОГО ЛИЦА</div>
+                              <div class="row no-gutters mb-3">
+                                <div class="col-auto">
+                                  <span class="icon-hint mr-1"></span>
+                                </div>
+                                <div class="col">
+                                  <div class="payment__hint">
+                                    Указываются строго в соответствии с учредительными документами организации, которая является плательщиком и получателем заказа
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mb-3">
+                                <div class="col-12 col-md-4">
+                                  <div class="input-holder">
+                                    <label>ИНН</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                  <div class="input-holder">
+                                    <label>Наименов. организации</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                  <div class="input-holder">
+                                    <label>КПП</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="payment__title mb-1">ЮРИДИЧЕСКИЙ АДРЕС</div>
+                              <div class="input-holder mb-4">
+                                <input type="text" class="form-control">
+                                <div class="invalid-feedback"></div>
+                              </div>
+                              <div class="payment__title mb-2">ФАКТИЧЕСКИЙ АДРЕС</div>
+                              <div class="row">
+                                <div class="col-12 col-md-6">
+                                  <div class="input-holder">
+                                    <label>Область</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <div class="input-holder">
+                                    <label>Город</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 col-lg-4">
+                                  <div class="input-holder">
+                                    <label>Улица</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-lg-2">
+                                  <div class="input-holder">
+                                    <label>Дом</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-lg-2">
+                                  <div class="input-holder">
+                                    <label>Стр.</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-lg-2">
+                                  <div class="input-holder">
+                                    <label>Подъезд</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-lg-2">
+                                  <div class="input-holder">
+                                    <label>Индекс</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mb-2">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                  <div class="input-holder">
+                                    <label>Расчетный счет</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                  <div class="input-holder">
+                                    <label>Наименов. банка</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                  <div class="input-holder">
+                                    <label>Корреспондентский счет</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                  <div class="input-holder">
+                                    <label>БИК</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                  <div class="input-holder">
+                                    <label>Город банка</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                  <div class="input-holder">
+                                    <label>Код ОКПО</label>
+                                    <input type="text" class="form-control">
+                                    <div class="invalid-feedback"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <ol class="count-list">
+                                <li>Вы сможете распечатать счёт-договор, нажав на кнопку «Оплатить» напротив заказа.</li>
+                                <li>Товары резервируются на 4 дня с даты оформления — успейте оплатить вовремя.</li>
+                                <li>Деньги поступят на счёт KOLESATYT.RU в течение 1–2 рабочих дней после оплаты.</li>
+                              </ol>
                             </div>
                           </div>
                         </div>
