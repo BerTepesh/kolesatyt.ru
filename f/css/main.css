@@ -209,49 +209,41 @@ label {
   user-select: none;
   border: 1px solid transparent;
   border-radius: 0;
-  background: #6A9C1D;
-  font-weight: bold;
+  background: transparent;
   color: #fff;
   line-height: 1;
-  padding: 10px 20px;
+  padding: 9px 15px;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out; }
   .btn:hover {
     color: #fff; }
   .btn:focus, .btn:active {
     box-shadow: none !important; }
+  .btn-primary {
+    background: #6A9C1D; }
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+      background: #6A9C1D !important;
+      color: #fff;
+      border-color: #6A9C1D !important; }
   .btn-lg {
-    padding: 16px 25px;
-    font-weight: normal;
-    font-size: 14px; }
-  .btn-sm {
-    padding: 9px 15px;
-    font-size: 16px;
-    line-height: 16px; }
-  .btn-lime {
-    background: #f5fce9;
-    color: #606060;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 7px 12px; }
-    .btn-lime:hover {
-      color: #606060; }
-  .btn-blue {
+    padding: 14px 25px;
+    font-weight: normal; }
+  .btn-secondary {
     background: #262b2f; }
-  .btn-white {
-    background: #fff;
-    color: #6A9C1D; }
-    .btn-white:hover {
-      color: #fff; }
-  .btn-bordered {
+  .btn-outline-primary {
     background: none;
     border: 1px solid #6A9C1D;
     color: #6A9C1D; }
-    .btn-bordered:hover {
-      background: #6A9C1D;
-      color: #fff; }
-  .btn-sm.btn-bordered {
-    padding: 8px 15px; }
+    .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+      background: #6A9C1D !important;
+      color: #fff;
+      border-color: #6A9C1D !important; }
+    .btn-outline-primary.border-2 {
+      border-width: 2px;
+      padding: 8px 15px; }
+
+.small {
+  font-size: 14px; }
 
 input[type='text'].form-control,
 input[type='number'].form-control,
@@ -972,10 +964,6 @@ tbody.collapse.show {
       padding-left: 15px;
       border-color: #C2C2C2;
       margin-bottom: 0; }
-    .cart-total__promo-input a {
-      margin-left: 3px; }
-      .cart-total__promo-input a:hover {
-        background: #6A9C1D; }
   .cart-total__promo-submit {
     border-width: 2px;
     padding: 7px 15px; }
